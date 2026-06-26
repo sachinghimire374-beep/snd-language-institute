@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SND Language Institute Pvt. Ltd. — Japanese Language, JLPT, IELTS, PTE & Study in Japan | Pokhara</title>
+<meta name="description" content="SND Language Institute, Pokhara — expert coaching for Japanese Language, NAT, JLCT, JLPT, J-CERT, IELTS, PTE and complete Study in Japan counseling. Book your free counseling session today.">
+<meta name="keywords" content="Japanese language class Pokhara, JLPT Pokhara, NAT exam Nepal, JLCT, J-CERT, IELTS Pokhara, PTE Pokhara, Study in Japan Nepal, SND Language Institute">
+<meta property="og:title" content="SND Language Institute — Learn Japanese. Study in Japan. Build Your Future.">
+<meta property="og:description" content="Expert training for NAT, JLCT, JLPT, J-CERT, IELTS & PTE in Pokhara, Nepal.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.png" type="image/png">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Fonts: Zen Kaku Gothic New (display, Japanese-friendly) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0F172A;
+  --navy-soft:#1E293B;
+  --red:#DC2626;
+  --red-deep:#B91C1C;
+  --white:#FFFFFF;
+  --gray:#F8FAFC;
+  --gold:#C9A35A;
+  --jp-blue:#1E73BE;
+  --jp-orange:#E8650A;
+  --jp-green:#2E9E4F;
+  --ink:#475569;
+  --font-display:'Zen Kaku Gothic New', sans-serif;
+  --font-mincho:'Shippori Mincho', serif;
+  --font-body:'Inter', sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--navy);
+  background:var(--white);
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.brand-font{font-family:var(--font-display); letter-spacing:.01em;}
+.text-jp{font-family:var(--font-mincho);}
+a{text-decoration:none;}
+.btn{border-radius:2px; font-weight:600; letter-spacing:.02em; padding:.85rem 1.8rem;}
+.btn-red{background:var(--red); border:1px solid var(--red); color:#fff;}
+.btn-red:hover{background:var(--red-deep); color:#fff;}
+.btn-outline-light-custom{border:1.5px solid rgba(255,255,255,.7); color:#fff; background:transparent;}
+.btn-outline-light-custom:hover{background:#fff; color:var(--navy);}
+.btn-navy{background:var(--navy); color:#fff; border:1px solid var(--navy);}
+.btn-navy:hover{background:var(--navy-soft); color:#fff;}
+section{position:relative;}
+.eyebrow{
+  font-family:var(--font-body); font-weight:700; font-size:.75rem; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--red); display:inline-flex; align-items:center; gap:.6rem; margin-bottom:.9rem;
+}
+.eyebrow::before{content:''; width:26px; height:2px; background:var(--red); display:inline-block;}
+
+/* ===== NAVBAR ===== */
+.navbar-custom{
+  background:rgba(255,255,255,.97); backdrop-filter:blur(8px); padding:.5rem 0; transition:.3s;
+  border-bottom:3px solid var(--red); box-shadow:0 2px 14px rgba(15,23,42,.06);
+}
+.navbar-custom .navbar-brand{color:var(--navy); font-weight:800; font-size:1.25rem; display:flex; align-items:center; gap:.7rem;}
+.navbar-custom .navbar-brand .brand-logo{height:64px; width:auto; flex-shrink:0;}
+.navbar-custom .navbar-brand .sun{width:30px; height:30px; background:var(--red); border-radius:50%; display:inline-block; flex-shrink:0;}
+.navbar-custom .navbar-brand .brand-text{display:flex; flex-direction:column; line-height:1.1;}
+.navbar-custom .navbar-brand .brand-text small{font-size:.68rem; font-weight:500; color:var(--ink); letter-spacing:.04em;}
+.navbar-custom .nav-link{color:var(--navy)!important; font-weight:600; font-size:.93rem; margin:0 .35rem; position:relative;}
+.navbar-custom .nav-link:hover{color:var(--red)!important;}
+.navbar-custom .nav-link.cta-nav{background:var(--red); color:#fff!important; padding:.5rem 1.1rem!important; border-radius:2px;}
+.navbar-custom .navbar-toggler i{color:var(--navy)!important;}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh; display:flex; align-items:center; position:relative; color:#fff;
+  background:
+    linear-gradient(115deg, rgba(15,23,42,.78) 0%, rgba(15,23,42,.62) 38%, rgba(15,23,42,.38) 65%, rgba(15,23,42,.18) 100%),
+    url('sndimage.jpg') center/cover no-repeat;
+  padding-top:110px;
+}
+.hero .sun-mark{display:none;}
+@keyframes pulseSun{0%,100%{opacity:.55; transform:scale(1);}50%{opacity:.85; transform:scale(1.06);}}
+.hero .rays{
+  position:absolute; inset:0; z-index:0; opacity:.08;
+  background-image:repeating-conic-gradient(from 0deg at 86% 14%, #fff 0deg 1deg, transparent 1deg 9deg);
+}
+.hero-content{position:relative; z-index:2;}
+.hero .vertical-jp{
+  position:absolute; right:4%; bottom:6%; writing-mode:vertical-rl; font-family:var(--font-mincho);
+  font-size:1.4rem; letter-spacing:.5em; color:rgba(255,255,255,.35); z-index:1; display:none;
+}
+@media(min-width:992px){.hero .vertical-jp{display:block;}}
+.hero h1{font-size:clamp(2.2rem, 4.5vw, 3.6rem); font-weight:900; line-height:1.15; margin-bottom:1.1rem;}
+.hero h1 .accent{color:var(--red);}
+.hero p.lead-sub{font-size:1.15rem; color:rgba(255,255,255,.82); max-width:560px; margin-bottom:2rem;}
+.hero-stats{display:flex; gap:2.2rem; margin-top:3rem; flex-wrap:wrap;}
+.hero-stats .stat-num{font-family:var(--font-display); font-weight:900; font-size:1.9rem; color:#fff;}
+.hero-stats .stat-label{font-size:.78rem; color:rgba(255,255,255,.65); text-transform:uppercase; letter-spacing:.1em;}
+.scroll-cue{position:absolute; bottom:28px; left:50%; transform:translateX(-50%); z-index:2; color:rgba(255,255,255,.6); font-size:.75rem; text-align:center;}
+.scroll-cue .line{width:1px; height:34px; background:rgba(255,255,255,.4); margin:8px auto 0; animation:scrollLine 1.8s infinite;}
+@keyframes scrollLine{0%{transform:scaleY(0); transform-origin:top;}50%{transform:scaleY(1); transform-origin:top;}100%{transform:scaleY(0); transform-origin:bottom;}}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip{background:var(--gray); padding:1.4rem 0; border-bottom:1px solid #e6eaf0;}
+.trust-strip .item{display:flex; align-items:center; gap:.6rem; color:var(--navy); font-weight:600; font-size:.92rem;}
+.trust-strip i{color:var(--red);}
+
+/* ===== SECTION GENERIC ===== */
+.section-pad{padding:5.5rem 0;}
+.bg-navy-section{background:var(--navy); color:#fff;}
+.bg-gray-section{background:var(--gray);}
+
+/* ===== COURSE CARDS ===== */
+.course-card-link{display:block; color:inherit; text-decoration:none; height:100%;}
+.course-card{
+  background:#fff; border:1px solid #e9edf2; border-radius:4px; padding:2rem 1.7rem; height:100%;
+  transition:.25s ease; position:relative; overflow:hidden; cursor:pointer;
+}
+.course-card:hover,.course-card-link:hover .course-card{transform:translateY(-6px); box-shadow:0 18px 40px rgba(15,23,42,.1); border-color:transparent;}
+.course-card .top-bar{position:absolute; top:0; left:0; height:4px; width:100%; background:var(--red); transform:scaleX(0); transform-origin:left; transition:.3s;}
+.course-card:hover .top-bar,.course-card-link:hover .course-card .top-bar{transform:scaleX(1);}
+.course-card .ic{width:54px; height:54px; border-radius:50%; background:var(--gray); display:flex; align-items:center; justify-content:center; color:var(--red); font-size:1.4rem; margin-bottom:1.2rem;}
+.course-card .ic.ic-blue{color:var(--jp-blue);}
+.course-card .ic.ic-orange{color:var(--jp-orange);}
+.course-card .ic.ic-green{color:var(--jp-green);}
+.course-card h3{font-size:1.15rem; margin-bottom:.6rem; font-weight:700;}
+.course-card p{color:var(--ink); font-size:.92rem; margin-bottom:0;}
+.course-card .jp-tag{position:absolute; top:1.2rem; right:1.2rem; font-family:var(--font-mincho); color:#e2e8f0; font-size:1.6rem;}
+.course-card .enroll-hint{font-size:.78rem; color:var(--red); font-weight:600; margin-top:.9rem; display:flex; align-items:center; gap:.35rem; opacity:0; transition:.2s;}
+.course-card-link:hover .course-card .enroll-hint,.course-card:hover .enroll-hint{opacity:1;}
+
+/* ===== WHY US ===== */
+.why-item{display:flex; gap:1.1rem; margin-bottom:1.8rem;}
+.why-item .num{font-family:var(--font-display); font-weight:900; font-size:1.6rem; color:var(--red); min-width:46px;}
+.why-item h4{font-size:1.05rem; font-weight:700; margin-bottom:.3rem;}
+.why-item p{color:var(--ink); font-size:.92rem; margin:0;}
+.why-photo{position:relative; border-radius:4px; overflow:hidden;}
+.why-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.why-photo .frame{position:absolute; inset:18px; border:2px solid var(--red); pointer-events:none; opacity:.6;}
+
+/* ===== PROCESS / STUDY IN JAPAN ===== */
+.process-track{position:relative;}
+.process-track::before{content:''; position:absolute; top:26px; left:0; right:0; height:1px; background:#e2e8f0; display:none;}
+@media(min-width:992px){.process-track::before{display:block;}}
+.process-step{text-align:left; position:relative; padding-top:1rem;}
+.process-step .dot{width:54px; height:54px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900; font-family:var(--font-display); margin-bottom:1.2rem; position:relative; z-index:1; font-size:1.1rem;}
+.process-step h4{font-size:1rem; font-weight:700; margin-bottom:.4rem;}
+.process-step p{font-size:.86rem; color:var(--ink);}
+
+/* ===== TESTIMONIALS ===== */
+.testi-card{background:#fff; border-radius:4px; padding:2rem; border:1px solid #e9edf2; height:100%;}
+.testi-card .stars{color:var(--gold); font-size:.85rem; margin-bottom:.8rem;}
+.testi-card p{color:var(--ink); font-size:.94rem;}
+.testi-card .who{font-weight:700; margin-top:1rem; font-size:.92rem;}
+.testi-card .who span{display:block; font-weight:400; color:#94a3b8; font-size:.78rem;}
+
+/* ===== FORM SECTION ===== */
+.form-panel{background:#fff; border-radius:6px; box-shadow:0 25px 60px rgba(15,23,42,.18); padding:2.4rem; margin-top:2.5rem; position:relative; z-index:3;}
+.form-control, .form-select{border-radius:2px; border:1px solid #cbd5e1; padding:.7rem .9rem; font-size:.93rem;}
+.form-control:focus, .form-select:focus{border-color:var(--red); box-shadow:0 0 0 3px rgba(220,38,38,.12);}
+.form-label{font-size:.82rem; font-weight:600; color:var(--navy); margin-bottom:.35rem;}
+.form-floating-divider{height:1px; background:#e2e8f0; margin:1.6rem 0;}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{
+  background:linear-gradient(120deg, var(--red) 0%, var(--red-deep) 100%); color:#fff; border-radius:6px; padding:3rem; position:relative; overflow:hidden;
+}
+.cta-banner::after{content:''; position:absolute; right:-60px; top:-60px; width:240px; height:240px; border-radius:50%; background:rgba(255,255,255,.08);}
+.cta-banner h3{font-weight:900; font-size:1.8rem;}
+
+/* ===== CONTACT ===== */
+.contact-card{background:var(--navy-soft); border-radius:4px; padding:1.6rem; height:100%; border:1px solid rgba(255,255,255,.06);}
+.contact-card i{color:var(--red); width:24px;}
+.contact-card a, .contact-card span{color:rgba(255,255,255,.85); font-size:.93rem;}
+.map-frame{border-radius:4px; overflow:hidden; border:1px solid rgba(255,255,255,.08);}
+
+/* ===== FOOTER ===== */
+footer{background:#0B1120; color:rgba(255,255,255,.6); font-size:.88rem;}
+footer a{color:rgba(255,255,255,.75);}
+footer a:hover{color:var(--red);}
+footer .footer-brand{font-family:var(--font-display); color:#fff; font-weight:700; font-size:1.2rem;}
+.social-ic{width:36px; height:36px; border:1px solid rgba(255,255,255,.18); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; transition:.2s;}
+.social-ic:hover{background:var(--red); border-color:var(--red);}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating-stack{position:fixed; right:18px; bottom:22px; display:flex; flex-direction:column; gap:12px; z-index:1000;}
+.float-btn{
+  width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  color:#fff; font-size:1.3rem; box-shadow:0 8px 22px rgba(0,0,0,.28); transition:.2s; position:relative;
+}
+.float-btn:hover{transform:translateY(-3px) scale(1.04); color:#fff;}
+.float-btn.wa{background:#25D366;}
+.float-btn.call{background:var(--navy);}
+.float-btn.mail{background:var(--red);}
+.float-btn .ping{position:absolute; inset:0; border-radius:50%; border:2px solid #25D366; animation:ping 1.8s infinite;}
+@keyframes ping{0%{transform:scale(1); opacity:.7;}100%{transform:scale(1.7); opacity:0;}}
+
+/* ===== MODAL / TOAST ===== */
+.success-box{display:none;}
+.success-box.show{display:block;}
+
+/* ===== UTILITIES ===== */
+.divider-jp{display:flex; align-items:center; justify-content:center; gap:1rem; margin-bottom:1.4rem;}
+.divider-jp .line{width:34px; height:1px; background:#cbd5e1;}
+.section-title{font-weight:900; font-size:clamp(1.7rem,3vw,2.4rem); margin-bottom:.7rem;}
+.section-sub{color:var(--ink); max-width:620px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important; transition:none!important;}
+}
+:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+/* ===== GALLERY ===== */
+.gallery-grid{columns:2; column-gap:12px;}
+@media(min-width:576px){.gallery-grid{columns:3;}}
+@media(min-width:992px){.gallery-grid{columns:4;}}
+.gallery-item{break-inside:avoid; margin-bottom:12px; overflow:hidden; border-radius:4px; cursor:pointer; position:relative;}
+.gallery-item img{width:100%; display:block; transition:.3s ease;}
+.gallery-item:hover img{transform:scale(1.04);}
+.gallery-item .overlay{position:absolute; inset:0; background:rgba(15,23,42,.35); opacity:0; transition:.3s; display:flex; align-items:center; justify-content:center;}
+.gallery-item:hover .overlay{opacity:1;}
+.gallery-item .overlay i{color:#fff; font-size:1.6rem;}
+
+/* Lightbox */
+.lightbox{display:none; position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:2000; align-items:center; justify-content:center;}
+.lightbox.active{display:flex;}
+.lightbox img{max-width:92vw; max-height:88vh; object-fit:contain; border-radius:4px; box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.lightbox-close{position:absolute; top:20px; right:24px; color:#fff; font-size:2rem; cursor:pointer; line-height:1; background:none; border:none; padding:0;}
+.lightbox-prev,.lightbox-next{position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:2rem; cursor:pointer; background:rgba(255,255,255,.12); border:none; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition:.2s;}
+.lightbox-prev{left:16px;}
+.lightbox-next{right:16px;}
+.lightbox-prev:hover,.lightbox-next:hover{background:rgba(255,255,255,.25);}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#top"><img src="logo.png" alt="SND Language Institute logo" class="brand-logo"><span class="brand-text">SND Language Institute<small>Support for New Departure</small></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" style="border-color:rgba(15,23,42,.25);">
+      <i class="fa-solid fa-bars" style="color:var(--navy);"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#study-japan">Study in Japan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="nav-link cta-nav" href="#inquiry">Free Counseling</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="sun-mark"></div>
+  <div class="rays"></div>
+  <span class="vertical-jp">日本語学院・ポカラ</span>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="eyebrow">SND LANGUAGE INSTITUTE · POKHARA, NEPAL</div>
+        <h1>Learn Japanese. Study in Japan. <span class="accent">Build Your Future.</span></h1>
+        <p class="lead-sub">Expert training for NAT, JLCT, JLPT, J-CERT, IELTS &amp; PTE — with complete counseling support to help you study, work, and live in Japan.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#inquiry" class="btn btn-red"><i class="fa-solid fa-pen-to-square me-2"></i>Enroll Now</a>
+          <a href="#inquiry" class="btn btn-outline-light-custom">Free Counseling</a>
+          <a id="heroWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-outline-light-custom"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp Us</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">1000+</div><div class="stat-label">Students Trained</div></div>
+          <div><div class="stat-num">8+</div><div class="stat-label">Years of Excellence</div></div>
+          <div><div class="stat-num">NAT/JLPT</div><div class="stat-label">Certified Curriculum</div></div>
+          <div><div class="stat-num">95%</div><div class="stat-label">Counseling Success</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL<div class="line"></div></div>
+</header>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="row g-3 text-center text-lg-start">
+      <div class="col-6 col-lg-3"><div class="item justify-content-center justify-content-lg-start"><i class="fa-solid fa-graduation-cap"></i> NAT &amp; JLPT Prep</div></div>
+      <div class="col-6 col-lg-3"><div class="item justify-content-center justify-content-lg-start"><i class="fa-solid fa-passport"></i> Study in Japan Visa Support</div></div>
+      <div class="col-6 col-lg-3"><div class="item justify-content-center justify-content-lg-start"><i class="fa-solid fa-language"></i> IELTS &amp; PTE Coaching</div></div>
+      <div class="col-6 col-lg-3"><div class="item justify-content-center justify-content-lg-start"><i class="fa-solid fa-handshake"></i> Free Career Counseling</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ COURSES ============ -->
+<section class="section-pad" id="courses">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <div class="divider-jp"><span class="line"></span><span class="eyebrow" style="margin:0;">COURSES WE OFFER</span><span class="line"></span></div>
+        <h2 class="section-title">One Institute. Every Exam You Need.</h2>
+        <p class="section-sub mx-auto">From your first Japanese word to your visa interview — our programs are structured to take you all the way to Japan.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="Japanese Language">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">語</span>
+            <div class="ic"><i class="fa-solid fa-torii-gate"></i></div>
+            <h3>Japanese Language Classes</h3>
+            <p>N5 to N2 level instruction from basics to advanced conversation, kanji, grammar and JLPT-style practice.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="NAT Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">能</span>
+            <div class="ic ic-blue"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>NAT Preparation</h3>
+            <p>Focused training for the Nepal Aptitude Test with full mock tests and personalized feedback.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="JLCT Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">就</span>
+            <div class="ic ic-orange"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>JLCT Preparation</h3>
+            <p>Job-ready Japanese Language &amp; Culture Test coaching for Specified Skilled Worker (SSW) candidates.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="JLPT Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">検</span>
+            <div class="ic ic-green"><i class="fa-solid fa-certificate"></i></div>
+            <h3>JLPT Preparation</h3>
+            <p>Structured N5–N2 exam preparation with past papers, listening drills and timed practice tests.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="JFT Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">試</span>
+            <div class="ic ic-blue"><i class="fa-solid fa-file-circle-check"></i></div>
+            <h3>JFT Preparation</h3>
+            <p>Japan Foundation Test coaching — listening, reading and Japanese-for-work skills for SSW visa applicants.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="SSW Skill Test Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">技</span>
+            <div class="ic ic-orange"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>SSW Skill Test Preparation</h3>
+            <p>Sector-specific skill test coaching for Specified Skilled Worker candidates in manufacturing, hospitality, construction and more.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="J-CERT Preparation">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">介</span>
+            <div class="ic"><i class="fa-solid fa-user-nurse"></i></div>
+            <h3>J-CERT Preparation</h3>
+            <p>Specialized preparation for the Japanese-Language Certification Test for Care Worker candidates.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="IELTS">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">英</span>
+            <div class="ic ic-blue"><i class="fa-solid fa-headset"></i></div>
+            <h3>IELTS Coaching</h3>
+            <p>All four modules — Listening, Reading, Writing, Speaking — taught by experienced, result-driven trainers.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="PTE">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">電</span>
+            <div class="ic ic-orange"><i class="fa-solid fa-display"></i></div>
+            <h3>PTE Coaching</h3>
+            <p>Computer-based test strategies, AI scoring techniques and intensive practice sessions for a fast score boost.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="Study in Japan Counseling">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">夢</span>
+            <div class="ic ic-green"><i class="fa-solid fa-plane-departure"></i></div>
+            <h3>Study in Japan Counseling</h3>
+            <p>End-to-end guidance — school selection, documentation, visa process and pre-departure orientation.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#inquiry" class="course-card-link" data-course="Spoken Japanese &amp; Conversation Club">
+          <div class="course-card"><div class="top-bar"></div><span class="jp-tag">話</span>
+            <div class="ic"><i class="fa-solid fa-comments"></i></div>
+            <h3>Spoken Japanese &amp; Conversation Club</h3>
+            <p>Weekly conversation practice to build fluency and confidence with native-style speaking patterns.</p>
+            <div class="enroll-hint"><i class="fa-solid fa-arrow-right"></i> Inquire Now</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section-pad bg-gray-section" id="why-us">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="why-photo" style="height:480px;">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200&auto=format&fit=crop" alt="Students studying Japanese language in a classroom in Pokhara">
+          <div class="frame"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="eyebrow">WHY SND LANGUAGE INSTITUTE</div>
+        <h2 class="section-title mb-4">Training Built Around Your Goal — Not Just the Exam</h2>
+
+        <div class="why-item">
+          <div class="num">01</div>
+          <div><h4>Experienced, Certified Trainers</h4><p>Instructors with real teaching and exam-board experience across Japanese and English proficiency tests.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="num">02</div>
+          <div><h4>Complete Study-in-Japan Pathway</h4><p>From language training to school placement and visa documentation — all under one roof.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="num">03</div>
+          <div><h4>Small Batches, Real Attention</h4><p>Limited seats per batch so every student gets feedback, correction, and speaking practice.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="num">04</div>
+          <div><h4>Free Counseling Before You Commit</h4><p>Talk to a counselor first — understand the right exam, course, and timeline for your goal, at no cost.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDY & WORK IN JAPAN PROCESS ============ -->
+<section class="section-pad bg-navy-section" id="study-japan">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <div class="divider-jp"><span class="line" style="background:rgba(255,255,255,.2)"></span><span class="eyebrow" style="margin:0;">YOUR PATH TO WORK &amp; STUDY IN JAPAN</span><span class="line" style="background:rgba(255,255,255,.2)"></span></div>
+        <h2 class="section-title">Study and Work in Japan</h2>
+        <p class="section-sub mx-auto" style="color:rgba(255,255,255,.7);">From your first class in Pokhara to a rewarding career in Japan — our counselors walk with you through every stage.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-4">
+        <div class="process-step">
+          <div class="dot">01</div>
+          <h4>Free Counseling</h4>
+          <p>Discuss your goals, eligibility and the right course or visa pathway for you.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="process-step">
+          <div class="dot">02</div>
+          <h4>Language Training</h4>
+          <p>Structured Japanese classes (N5–N3) plus JFT, JLCT, JLPT or SSW Skill Test preparation.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="process-step">
+          <div class="dot">03</div>
+          <h4>Interview Preparation</h4>
+          <p>Intensive Japanese interview coaching — role-plays, business etiquette, and employer Q&amp;A drills.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="process-step">
+          <div class="dot">04</div>
+          <h4>Assist in Japanese Company</h4>
+          <p>Post-placement support — workplace Japanese guidance and communication coaching as you settle into your role.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="process-step">
+          <div class="dot">05</div>
+          <h4>N3 Japanese Classes</h4>
+          <p>Advanced N3-level training to accelerate your career growth and open doors to promotion and permanent residency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section-pad" id="testimonials">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <div class="divider-jp"><span class="line"></span><span class="eyebrow" style="margin:0;">STUDENT VOICES</span><span class="line"></span></div>
+        <h2 class="section-title">Trusted by Students Across Pokhara</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"The teachers explained kanji and grammar in a way I could actually remember. I passed JLPT N4 on my first attempt."</p>
+          <div class="who">Sujata R.<span>JLPT N4 Batch</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Counseling helped me pick JLCT instead of struggling with a course that wasn't right for my goal. Honest advice, real results."</p>
+          <div class="who">Bikash T.<span>JLCT Candidate</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"From IELTS classes to my study visa documents, SND supported me at every single step. I'm now preparing to fly to Japan."</p>
+          <div class="who">Anisha G.<span>Study in Japan Program</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section-pad bg-gray-section" id="gallery">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-7">
+        <div class="divider-jp"><span class="line"></span><span class="eyebrow" style="margin:0;">OUR INSTITUTE</span><span class="line"></span></div>
+        <h2 class="section-title">Life at SND Language Institute</h2>
+        <p class="section-sub mx-auto">A glimpse into our classrooms, students, and the journey we share together.</p>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="IMG_1454.jpeg" alt="SND Language Institute gallery photo 1" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="IMG_1455.jpeg" alt="SND Language Institute gallery photo 2" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="IMG_1459.jpeg" alt="SND Language Institute gallery photo 3" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="IMG_1462.jpeg" alt="SND Language Institute gallery photo 4" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><img src="IMG_1463.jpeg" alt="SND Language Institute gallery photo 5" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(5)"><img src="IMG_1464.jpeg" alt="SND Language Institute gallery photo 6" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(6)"><img src="IMG_1468.jpeg" alt="SND Language Institute gallery photo 7" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(7)"><img src="IMG_1469.jpeg" alt="SND Language Institute gallery photo 8" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(8)"><img src="IMG_1492.jpeg" alt="SND Language Institute gallery photo 9" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(9)"><img src="IMG_1593.jpeg" alt="SND Language Institute gallery photo 10" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(10)"><img src="IMG_1607.jpeg" alt="SND Language Institute gallery photo 11" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(11)"><img src="IMG_1638.jpeg" alt="SND Language Institute gallery photo 12" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item" onclick="openLightbox(12)"><img src="IMG_6567.jpeg" alt="SND Language Institute gallery photo 13" loading="lazy"><div class="overlay"><i class="fa-solid fa-expand"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" onclick="shiftLightbox(-1)" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lightboxImg" src="" alt="Gallery image">
+  <button class="lightbox-next" onclick="shiftLightbox(1)" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ============ INQUIRY FORM ============ -->
+<section class="section-pad bg-gray-section" id="inquiry">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="cta-banner mb-0 mb-lg-0">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h3>Not sure which course is right for you?</h3>
+              <p class="mb-0" style="opacity:.9;">Book a free, no-obligation counseling session with our experts.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+              <a href="#counseling-form" class="btn btn-navy">Book Free Counseling</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <div class="row mb-4">
+            <div class="col-lg-7">
+              <div class="eyebrow">GET IN TOUCH</div>
+              <h2 class="section-title" style="font-size:1.9rem;">Get Free Counseling</h2>
+              <p class="section-sub">Fill in your details and our counselor will reach out within 24 hours — or contact us instantly on WhatsApp.</p>
+            </div>
+          </div>
+
+          <!-- Success message (hidden by default) -->
+          <div class="success-box alert alert-success" id="inquirySuccess" role="alert">
+            <strong>Thank you!</strong> Our counselor will contact you shortly.
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <a href="#" id="successWhatsapp" target="_blank" rel="noopener" class="btn btn-sm btn-red"><i class="fa-brands fa-whatsapp me-1"></i> Chat on WhatsApp</a>
+              <a href="tel:+9779769491552" class="btn btn-sm btn-navy"><i class="fa-solid fa-phone me-1"></i> Call Now</a>
+            </div>
+          </div>
+
+          <!--
+            FORM SUBMISSION (no backend required):
+            Uses FormSubmit.co — delivers form data straight to sndlginstitutepkr22@gmail.com.
+            On first submission, FormSubmit sends a one-time confirmation email to
+            sndlginstitutepkr22@gmail.com that must be approved before live submissions start arriving.
+            To use EmailJS instead, replace the form's action/method with a JS handler
+            using EmailJS's emailjs.send() call — keys would go in a <script> include.
+          -->
+          <form id="inquiryForm" action="https://formsubmit.co/sndlginstitutepkr22@gmail.com" method="POST" class="row g-3">
+            <input type="hidden" name="_subject" value="New Inquiry from Website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting SND Language Institute. Our counselor will reach out to you shortly.">
+
+            <div class="col-md-6">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="Full Name" class="form-control" placeholder="Your full name" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="Phone Number" class="form-control" placeholder="98XXXXXXXX" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address *</label>
+              <input type="email" name="Email Address" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Course Interested In *</label>
+              <select name="Course Interested In" id="courseSelect" class="form-select" required>
+                <option value="" selected disabled>Select a course</option>
+                <option>Japanese Language</option>
+                <option>NAT Preparation</option>
+                <option>JLCT Preparation</option>
+                <option>JLPT Preparation</option>
+                <option>JFT Preparation</option>
+                <option>SSW Skill Test Preparation</option>
+                <option>J-CERT Preparation</option>
+                <option>IELTS</option>
+                <option>PTE</option>
+                <option>Study in Japan Counseling</option>
+                <option>Spoken Japanese &amp; Conversation Club</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Preferred Contact Method *</label>
+              <select name="Preferred Contact Method" class="form-select" required>
+                <option value="" selected disabled>Select an option</option>
+                <option>WhatsApp</option>
+                <option>Phone Call</option>
+                <option>Email</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">&nbsp;</label>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea name="Message" class="form-control" rows="4" placeholder="Tell us about your goal — e.g. exam date, level, or questions."></textarea>
+            </div>
+
+            <input type="hidden" name="_next" value="#inquiry">
+
+            <div class="col-12 d-flex flex-wrap gap-3 align-items-center mt-2">
+              <button type="submit" class="btn btn-red px-4">Send Inquiry</button>
+              <a id="formWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-outline-secondary"><i class="fa-brands fa-whatsapp me-2"></i>Or WhatsApp Us Instead</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FREE COUNSELING BOOKING ============ -->
+<section class="section-pad" id="counseling-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-4">
+          <div class="divider-jp"><span class="line"></span><span class="eyebrow" style="margin:0;">BOOK A SESSION</span><span class="line"></span></div>
+          <h2 class="section-title">Book Your Free Counseling</h2>
+          <p class="section-sub mx-auto">Pick a date and time that works for you — our counselor will confirm it with you on call or WhatsApp.</p>
+        </div>
+
+        <div class="form-panel" style="margin-top:0; box-shadow:0 10px 30px rgba(15,23,42,.08);">
+          <div class="success-box alert alert-success" id="bookingSuccess" role="alert">
+            <strong>Thank you!</strong> Your counseling session request has been received. We'll confirm your slot shortly.
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <a href="#" id="bookingWhatsapp" target="_blank" rel="noopener" class="btn btn-sm btn-red"><i class="fa-brands fa-whatsapp me-1"></i> Chat on WhatsApp</a>
+              <a href="tel:+9779769491552" class="btn btn-sm btn-navy"><i class="fa-solid fa-phone me-1"></i> Call Now</a>
+            </div>
+          </div>
+
+          <form id="bookingForm" action="https://formsubmit.co/sndlginstitutepkr22@gmail.com" method="POST" class="row g-3">
+            <input type="hidden" name="_subject" value="New Free Counseling Booking">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="col-md-6">
+              <label class="form-label">Name *</label>
+              <input type="text" name="Name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone *</label>
+              <input type="tel" name="Phone" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email *</label>
+              <input type="email" name="Email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Course</label>
+              <select name="Course" class="form-select">
+                <option value="" selected disabled>Select a course</option>
+                <option>Japanese Language</option>
+                <option>NAT Preparation</option>
+                <option>JLCT Preparation</option>
+                <option>JLPT Preparation</option>
+                <option>JFT Preparation</option>
+                <option>SSW Skill Test Preparation</option>
+                <option>J-CERT Preparation</option>
+                <option>IELTS</option>
+                <option>PTE</option>
+                <option>Study in Japan Counseling</option>
+                <option>Spoken Japanese &amp; Conversation Club</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Date *</label>
+              <input type="date" name="Preferred Date" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Time *</label>
+              <input type="time" name="Preferred Time" class="form-control" required>
+            </div>
+
+            <input type="hidden" name="_next" value="#counseling-form">
+
+            <div class="col-12 mt-2">
+              <button type="submit" class="btn btn-navy px-4">Book Counseling</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section-pad bg-navy-section" id="contact">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7">
+        <div class="eyebrow">VISIT OR REACH US</div>
+        <h2 class="section-title">Let's Talk About Your Future</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.7);">Our counselors are available at the institute and online — choose whichever way suits you.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot fa-lg mb-3"></i>
+          <h4 class="h6 text-white">Address</h4>
+          <span>New Road, Pokhara-9,<br>Kaski, Nepal</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card">
+          <i class="fa-solid fa-phone fa-lg mb-3"></i>
+          <h4 class="h6 text-white">Call / Mobile</h4>
+          <a href="tel:+9779769491552">+977 9769491552</a><br>
+          <a href="tel:061544451">061-544451</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card">
+          <i class="fa-brands fa-whatsapp fa-lg mb-3"></i>
+          <h4 class="h6 text-white">WhatsApp</h4>
+          <a href="#" id="contactWhatsapp" target="_blank" rel="noopener">+977 9769491552</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope fa-lg mb-3"></i>
+          <h4 class="h6 text-white">Email</h4>
+          <a href="mailto:sndlginstitutepkr22@gmail.com?subject=Course Inquiry">sndlginstitutepkr22@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Only+Cafe+Backside+Trade+Mall+Buddha+Marga+Pokhara+Nepal&output=embed" width="100%" height="320" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SND Language Institute location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-2 d-flex align-items-center gap-2"><img src="logo.png" alt="SND Language Institute logo" style="height:58px;">SND Language Institute</div>
+        <p class="mb-3">SND Language Institute Pvt. Ltd. — Pokhara's trusted name for Japanese language training, exam preparation, and Study in Japan counseling.</p>
+        <div class="d-flex gap-2">
+          <a class="social-ic" href="https://www.facebook.com/profile.php?id=61551402599154" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-ic" href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="social-ic" id="footerWhatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h6 class="text-white mb-3">Quick Links</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#study-japan">Study in Japan</a></li>
+          <li><a href="#inquiry">Free Counseling</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h6 class="text-white mb-3">Courses</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#courses">Japanese Language</a></li>
+          <li><a href="#courses">NAT / JLCT / JLPT / J-CERT</a></li>
+          <li><a href="#courses">IELTS / PTE</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <h6 class="text-white mb-3">Contact</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="tel:+9779769491552">+977 9769491552</a></li>
+          <li><a href="mailto:sndlginstitutepkr22@gmail.com">sndlginstitutepkr22@gmail.com</a></li>
+          <li><span>New Road, Pokhara-9</span></li>
+        </ul>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.08); margin:2rem 0 1.2rem;">
+    <div class="d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; <span id="year"></span> SND Language Institute Pvt. Ltd. All rights reserved.</span>
+      <span>Designed by <a href="https://wa.me/9779846022453" target="_blank" rel="noopener" style="color:rgba(255,255,255,.8); text-decoration:underline;">Aswat-thama Tech</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="floating-stack">
+  <a class="float-btn wa" id="floatWhatsapp" target="_blank" rel="noopener" href="#" aria-label="Chat on WhatsApp">
+    <span class="ping"></span><i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a class="float-btn call" href="tel:+9779769491552" aria-label="Call us">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+  <a class="float-btn mail" href="mailto:sndlginstitutepkr22@gmail.com?subject=Course Inquiry" aria-label="Email us">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+  // ---- WhatsApp link with prefilled message, applied to every WhatsApp touchpoint ----
+  const WA_NUMBER = '9779769491552';
+  const WA_MESSAGE = 'Hello SND Language Institute, I would like to inquire about your courses.';
+  const waLink = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(WA_MESSAGE);
+
+  ['heroWhatsapp','formWhatsapp','contactWhatsapp','footerWhatsapp','floatWhatsapp','successWhatsapp','bookingWhatsapp']
+    .forEach(id => { const el = document.getElementById(id); if (el) el.href = waLink; });
+
+  // ---- Footer year ----
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---- Inquiry & booking form: show success message after FormSubmit redirect ----
+  // FormSubmit posts the data then redirects to "_next". We intercept submit to
+  // show an inline success state immediately (works even if the network call
+  // takes a moment), while the form still genuinely posts to FormSubmit.
+  function wireForm(formId, successId){
+    const form = document.getElementById(formId);
+    const success = document.getElementById(successId);
+    if(!form) return;
+    form.addEventListener('submit', function(){
+      // allow the native POST to FormSubmit to proceed (no preventDefault),
+      // but reveal the success panel right away for a snappy UX.
+      setTimeout(() => {
+        success.classList.add('show');
+        success.scrollIntoView({behavior:'smooth', block:'center'});
+      }, 50);
+    });
+  }
+  wireForm('inquiryForm','inquirySuccess');
+  wireForm('bookingForm','bookingSuccess');
+
+  // ---- Navbar background on scroll (subtle depth change) ----
+  const nav = document.querySelector('.navbar-custom');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) { nav.style.boxShadow = '0 6px 24px rgba(0,0,0,.25)'; }
+    else { nav.style.boxShadow = 'none'; }
+  });
+
+  // ---- Lightbox ----
+  const galleryImgs = [
+    'IMG_1454.jpeg','IMG_1455.jpeg','IMG_1459.jpeg','IMG_1462.jpeg',
+    'IMG_1463.jpeg','IMG_1464.jpeg','IMG_1468.jpeg','IMG_1469.jpeg',
+    'IMG_1492.jpeg','IMG_1593.jpeg','IMG_1607.jpeg','IMG_1638.jpeg','IMG_6567.jpeg'
+  ];
+  let currentIdx = 0;
+  function openLightbox(idx){
+    currentIdx = idx;
+    document.getElementById('lightboxImg').src = galleryImgs[idx];
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox(){
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeLightboxOutside(e){
+    if(e.target === document.getElementById('lightbox')) closeLightbox();
+  }
+  function shiftLightbox(dir){
+    currentIdx = (currentIdx + dir + galleryImgs.length) % galleryImgs.length;
+    document.getElementById('lightboxImg').src = galleryImgs[currentIdx];
+  }
+  document.addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(!lb.classList.contains('active')) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft') shiftLightbox(-1);
+    if(e.key === 'ArrowRight') shiftLightbox(1);
+  });
+
+  // ---- Course card click → pre-select course in inquiry form ----
+  document.querySelectorAll('.course-card-link').forEach(link => {
+    link.addEventListener('click', function() {
+      const course = this.getAttribute('data-course');
+      const select = document.getElementById('courseSelect');
+      if (!course || !select) return;
+      // Decode HTML entities (e.g. &amp; → &) for matching
+      const decoded = course.replace(/&amp;/g, '&');
+      setTimeout(() => {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text === decoded || select.options[i].value === decoded) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        select.focus();
+      }, 400);
+    });
+  });
+</script>
+</body>
+</html>
